@@ -10,6 +10,8 @@ Linge S. and Langtangen H. P., *Programming for Computations - MATLAB/Octave: A 
 
 The book is freely avaliable here: [Programming for Computations](https://link.springer.com/book/10.1007%2F978-3-319-32452-4).
 
+Some of the code examples in this repository are taken directly from the book above. I usually made minor changes, and verify code correctness but scripts base implementation is listed in the book.
+
 Another great source is official MATLAB help website [MATLAB Documentation](https://se.mathworks.com/help/matlab/). If you do not know where to start, simply go to [Getting Started](https://se.mathworks.com/help/matlab/getting-started-with-matlab.html) and explore tutorials.
 
 ### About git
