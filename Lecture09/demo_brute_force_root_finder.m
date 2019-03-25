@@ -1,9 +1,9 @@
 function demo_brute_force_root_finder()
-f = @(x) exp(-x.^2).*cos(2*x);
+f = @(x) exp(-x.^2).*cos(20*x);
 a = 0; b = 4; n = 1001;
 % tic
 % for i = 1:1000
-    roots = brute_force_root_finder(...
+    roots = brute_force_root_finder_preallocate(...
         f, a, b, n);
 % end
 % toc
