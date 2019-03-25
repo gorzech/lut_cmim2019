@@ -1,0 +1,15 @@
+f = @(x) tanh(x);
+fp = @(x) 1 ./ (cosh(x) .^ 2);
+x = 1.09;
+xint = [-3, 3];
+tol = 1e-2;
+fplot(f, xint, 'LineWidth', 2);
+hold on
+fplot(@(~)0, xint, '--r', 'LineWidth', 1.5);
+while abs(f(x)) > tol
+    fplot(@(xx) fp(x).*(xx-x) + f(x), xint, '-.g', 'LineWidth', 1.0);
+    x = x - f(x)/fp(x);
+    disp(x);    
+end
+hold off
+result = x;
