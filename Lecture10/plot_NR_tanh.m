@@ -5,7 +5,7 @@ xint = [-3, 3];
 tol = 1e-2;
 fplot(f, xint, 'LineWidth', 2);
 hold on
-fplot(@(~)0, xint, '--r', 'LineWidth', 1.5);
+fplot(@(x)zeros(size(x)), xint, '--r', 'LineWidth', 1.5);
 while abs(f(x)) > tol
     fplot(@(xx) fp(x).*(xx-x) + f(x), xint, '-.g', 'LineWidth', 1.0);
     x = x - f(x)/fp(x);
